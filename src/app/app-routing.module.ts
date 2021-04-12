@@ -9,7 +9,7 @@ const routes: Routes = [
 
 {path: 'detail-cocktails/:id', component: DetailCocktailComponent },
 {path: 'list-cocktails', component: ListCocktailsComponent},
-{path: '**', pathMatch:'full', redirectTo: 'list-cocktail'},
+{path: '**', pathMatch:'full', redirectTo: 'list-cocktails'},
 ];
 
 @NgModule({

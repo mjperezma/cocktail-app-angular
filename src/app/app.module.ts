@@ -1,11 +1,12 @@
 import { ListCocktailsComponent } from './components/list-cocktails/list-cocktails.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DetailCocktailComponent } from './components/list-cocktails/detail-cocktail/detail-cocktail.component';
-
+import { FormsModule } from '@angular/forms';
+import {NgxPaginationModule} from 'ngx-pagination'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +15,7 @@ import { DetailCocktailComponent } from './components/list-cocktails/detail-cock
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, FormsModule, HttpClientModule, NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
